@@ -187,6 +187,7 @@ Table comparing different metrics across model, rows column model accuracy based
  <picture>
   <img   alt="Location page | PBI" width="800px" src="https://github.com/maeshakib/App-Rating-Prediction-Models/blob/main/sumamry.png" /> <br>
 </picture>
+<br/>
 Fig: Comparison of Model performance
 <br/>
 
