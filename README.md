@@ -45,6 +45,7 @@ Fig 1:Distribution of Average Ratings
 The scatter plot shows the relationship between app filesize and average rating across different app stores (Amazon, Apple, Google Play). There is no clear correlation between filesize and average rating, indicating that app quality, as perceived by users, does not significantly depend on the app's filesize. However, apps from the Apple store (red dots) seem to have a wider range of filesizes compared to other stores.
 <br/>
 <img  alt="Location page | PBI" width="500px" src="https://github.com/maeshakib/App-Rating-Prediction-Models/blob/main/Fig%202%20%20Filesize%20vs.%20Average%20Rating.png" />
+<br/>
 Fig 2: Filesize vs. Average Rating
 <br/>
 
