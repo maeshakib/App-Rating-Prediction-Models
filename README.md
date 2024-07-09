@@ -40,11 +40,13 @@ The histogram shows a significant number of apps with an average ratings of 4 an
 <img  alt="Location page | PBI" width="500px" src="https://github.com/maeshakib/App-Rating-Prediction-Models/blob/main/Fig%201%20Distribution%20of%20Average%20Ratings.png" /> 
 Fig 1:Distribution of Average Ratings
 <br/>
+
 **2.	Filesize vs. Average Rating**
 The scatter plot shows the relationship between app filesize and average rating across different app stores (Amazon, Apple, Google Play). There is no clear correlation between filesize and average rating, indicating that app quality, as perceived by users, does not significantly depend on the app's filesize. However, apps from the Apple store (red dots) seem to have a wider range of filesizes compared to other stores.
 <img  alt="Location page | PBI" width="500px" src="https://github.com/maeshakib/App-Rating-Prediction-Models/blob/main/Fig%202%20%20Filesize%20vs.%20Average%20Rating.png" />
 Fig 2: Filesize vs. Average Rating
 <br/>
+
 **3.	Ratings by App Category**
 Box Plot: To compare the distribution of ratings across different categories. we observed that game app getting higher ratting that other categories
 <img  alt="Location page | PBI" width="500px" src="https://github.com/maeshakib/App-Rating-Prediction-Models/blob/main/Fig%203%20%20Ratings%20by%20App%20Category.png" />
@@ -73,14 +75,15 @@ Fig 4: Price vs Average Rating
 ### Data Sampling 
 There are 25,124 instances in the dataset. We used the Data Sampler widget to split the data, choosing a fixed proportion approach: 70% of the data instances were allocated to the training sample, while the remaining 30% were reserved for testing.
 
-Model Training
-Model Training: kNN-5
+### Model Training
+
+**Model Training: kNN-5**
 k-Nearest Neighbors is a simple algorithm that stores all available cases and classifies new cases based on a similarity measure (e.g., distance functions). In the model training phase, we utilized the k-Nearest Neighbors (kNN) algorithm with k=5 (denoted as kNN-5)
 The Random Forest model's 
 Random Forest is an ensemble learning method that constructs a multitude of decision trees during training.
-Linear Regression Model:
+**Linear Regression Model:**
 Linear Regression is a linear approach for modeling the relationship between a dependent variable (target) and one or more independent variables (predictors).
-Stack Model:
+**Stack Model:**
 Stacking is an ensemble learning technique that combines multiple classification or regression models via a meta-model. Here we are using Linear Regression, Random Forest and KNN-5 for building Stack model.
 Model Evaluation on Training Data
 Model Training: kNN-5
@@ -99,10 +102,10 @@ The Random Forest model’s performance metrics are as follows:
 •	MAE (Mean Absolute Error): 0.142
 •	MAPE (Mean Absolute Percentage Error): 0.038
 •	R2 (R-squared): 0.912
-Performance:
+**Performance:**
 The low MSE (0.070), RMSE (0.265), and MAE (0.142) indicate that the model makes very accurate predictions, with small deviations from the actual values.   The MAPE (0.038) is very low, suggesting that the model's predictions are off by only 3.8% on average from the actual values, demonstrating excellent relative accuracy. The R2 value of 0.912 means that the model explains 91.2% of the variance in the target variable, showing that it effectively captures the underlying patterns in the data.
 
-Weaknesses: 
+**Weaknesses:**
 Training and making predictions with a Random Forest model can be computationally expensive, especially with large datasets and numerous trees. This can lead to longer training times and higher resource usage, which might be a limitation in resource-constrained environments.
 Linear Regression Model:
 The Linear Regression model’s performance metrics are as follows:
@@ -130,7 +133,7 @@ Weaknesses:
 The extremely high MAPE value( 14420913682013.391)  suggests a significant issue, possibly due to outliers or an incorrect calculation. This metric typically measures the average absolute percentage error, and such a high value indicates that there might be instances where the model's predictions are highly inaccurate in relative terms. Investigating and addressing the source of this anomaly is crucial.
 
 
-Predictions on Test Data
+### Predictions on Test Data
  
 KNN-5: The low MSE (0.329),RMSE ( 0.574),MAE (0.238) values suggest that the model can reasonably predict the target variable, the high MAPE and R2(0.589) indicate that model can predict 58% of variance of test data.
 Linear Regression: The high MSE (17), RMSE (4.175), and MAE (0.515) indicate that the model makes inaccurate predictions, with substantial deviations from the actual values. The extraordinarily high MAPE suggests that the model's predictions are off by an extremely large percentage on average, indicating very poor relative accuracy. The negative R² value of -20.786 means that the model performs significantly worse than simply using the mean of target variables. 
@@ -147,27 +150,28 @@ Table comparing different metrics across model, rows column model accuracy based
   <img align="left" alt="Location page | PBI" width="1000px" src="https://github.com/maeshakib/App-Rating-Prediction-Models/blob/main/sumamry.png" /> <br>
 </picture>
 Fig: Comparison of Model performance
+<br/>
 
-Strengths and weaknesses of each model.
+### Strengths and weaknesses of each model.
 
 1.	kNN-5:
-•	Strengths: Simple and easy to implement, performs well with fewer features.
-•	Weaknesses: High MAPE indicates poor performance, sensitive to the choice of 'k'.
+- Strengths: Simple and easy to implement, performs well with fewer features.
+- Weaknesses: High MAPE indicates poor performance, sensitive to the choice of 'k'.
 2.	Random Forest:
-•	Strengths: Low MSE, RMSE, MAE, and MAPE, high R2, indicating excellent performance and robustness.
-•	Weaknesses: Can be computationally intensive, harder to interpret compared to linear models.
+- Strengths: Low MSE, RMSE, MAE, and MAPE, high R2, indicating excellent performance and robustness.
+- Weaknesses: Can be computationally intensive, harder to interpret compared to linear models.
 3.	Linear Regression:
-•	Strengths: Simple to implement and interpret, computationally efficient.
-•	Weaknesses: Extremely high MSE, RMSE, and MAPE, negative R2 indicates very poor performance and likely overfitting or data issues.
+- Strengths: Simple to implement and interpret, computationally efficient.
+- Weaknesses: Extremely high MSE, RMSE, and MAPE, negative R2 indicates very poor performance and likely overfitting or data issues.
 4.	Stack:
-•	Strengths: Lowest MSE, RMSE, high R2, indicating the best performance among the models.
-•	Weaknesses: Slightly higher MAE compared to Random Forest, MAPE is relatively high, indicating potential issues with percentage error.
+- Strengths: Lowest MSE, RMSE, high R2, indicating the best performance among the models.
+- Weaknesses: Slightly higher MAE compared to Random Forest, MAPE is relatively high, indicating potential issues with percentage error.
 
 
 Insights into the predictability of app ratings.
-•	Random Forest and Stack Models: Both demonstrate strong predictive power with high R2 values and low error metrics, suggesting that app ratings can be predicted accurately using these methods.
-•	kNN-5 Model: Shows moderate performance, indicating that while it can capture some patterns in the data, it is not as effective as more complex models.
-•	Linear Regression Model: Performs poorly, suggesting that the relationship between features and app ratings is not linear, or the model suffers from significant overfitting or underfitting.
+- Random Forest and Stack Models: Both demonstrate strong predictive power with high R2 values and low error metrics, suggesting that app ratings can be predicted accurately using these methods.
+- kNN-5 Model: Shows moderate performance, indicating that while it can capture some patterns in the data, it is not as effective as more complex models.
+- Linear Regression Model: Performs poorly, suggesting that the relationship between features and app ratings is not linear, or the model suffers from significant overfitting or underfitting.
 Conclusions
 In conclusion, for predicting app ratings, Random Forest and Stack models provide the best performance, with the Stack model having a slight edge in terms of overall error metrics. Both demonstrate strong predictive power with high R2 values and low error metrics, suggesting that app ratings can be predicted accurately using these methods. Slightly higher MAE compared to Random Forest, MAPE is relatively high, indicating potential issues with percentage error. Random Forest  is the best model for this data.
 
