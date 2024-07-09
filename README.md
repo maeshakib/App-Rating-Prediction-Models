@@ -118,7 +118,7 @@ The performance metrics for this model are as follows:
 
 **Weaknesses:**  The high MAPE value suggests that the model might struggle with predicting values accurately in percentage terms, possibly due to outliers or data with high variability. The relatively low R2 indicates that the model does not capture a significant portion of the variance in the data, implying that more sophisticated models might be needed for better performance.
 
-**The Random Forest model's **
+**The Random Forest model's**
 
 The Random Forest model’s performance metrics are as follows:
 - MSE (Mean Squared Error): 0.070
