@@ -38,6 +38,7 @@ With Histogram will explore the distribution of the average_rating.
 The histogram shows a significant number of apps with an average ratings of 4 and 4.5 and 5, which suggests that a large portion of the apps are well-rated.
 <br/>
 <img  alt="Location page | PBI" width="500px" src="https://github.com/maeshakib/App-Rating-Prediction-Models/blob/main/Fig%201%20Distribution%20of%20Average%20Ratings.png" /> 
+<br/>
 Fig 1:Distribution of Average Ratings
 <br/>
 
@@ -56,6 +57,7 @@ Fig 2: Filesize vs. Average Rating
 Box Plot: To compare the distribution of ratings across different categories. we observed that game app getting higher ratting that other categories
 <br/>
 <img  alt="Location page | PBI" width="500px" src="https://github.com/maeshakib/App-Rating-Prediction-Models/blob/main/Fig%203%20%20Ratings%20by%20App%20Category.png" />
+<br/>
 Fig 3: Ratings by App Category
 <br/>
 
