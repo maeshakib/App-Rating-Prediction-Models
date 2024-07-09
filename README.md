@@ -162,19 +162,22 @@ The Stack model’s performance metrics are as follows:
 - MAPE (Mean Absolute Percentage Error): 14420913682013.391
 - R2 (R-squared): 0.910
 
-**Performance:**
+__**Performance:**__
 The low MSE (0.072), RMSE (0.268), and MAE (0.147) indicate that the model makes very accurate predictions, with small deviations from the actual values. Despite the anomalously high MAPE (14420913682013.391), which seems to be an outlier, the model overall demonstrates strong performance. The high R² value of 0.910 means that the model explains 91% of the variance in the target variable, showing that it effectively captures the underlying patterns in the data.
-Weaknesses: 
+
+__**Weaknesses:**__
 The extremely high MAPE value( 14420913682013.391)  suggests a significant issue, possibly due to outliers or an incorrect calculation. This metric typically measures the average absolute percentage error, and such a high value indicates that there might be instances where the model's predictions are highly inaccurate in relative terms. Investigating and addressing the source of this anomaly is crucial.
 
 
 ### Predictions on Test Data
  
-KNN-5: The low MSE (0.329),RMSE ( 0.574),MAE (0.238) values suggest that the model can reasonably predict the target variable, the high MAPE and R2(0.589) indicate that model can predict 58% of variance of test data.
-Linear Regression: The high MSE (17), RMSE (4.175), and MAE (0.515) indicate that the model makes inaccurate predictions, with substantial deviations from the actual values. The extraordinarily high MAPE suggests that the model's predictions are off by an extremely large percentage on average, indicating very poor relative accuracy. The negative R² value of -20.786 means that the model performs significantly worse than simply using the mean of target variables. 
-Random Forest model: The low MSE (0.022), RMSE (0.148), and MAE (0.054) indicate that the model makes very accurate predictions, with small deviations from the actual values.   The MAPE (0.014) is very low, R2 value of 0.912 suggesting that the model explains 97.2% of the variance in the test data, model can predict, showing that it effectively captures the underlying patterns in the data.
+**KNN-5:** The low MSE (0.329),RMSE ( 0.574),MAE (0.238) values suggest that the model can reasonably predict the target variable, the high MAPE and R2(0.589) indicate that model can predict 58% of variance of test data.
 
-Stack Model: The low MSE (0.020), RMSE (0.143), and MAE (0.058) indicate that the model makes very accurate predictions, with small deviations from the actual values. Despite the anomalously high MAPE which seems to be an outlier, the model overall demonstrates strong performance. The high R² value of 0.975 means that the model explains 95% of the variance in the target variable, showing that it effectively captures the underlying patterns in the data.
+**Linear Regression:** The high MSE (17), RMSE (4.175), and MAE (0.515) indicate that the model makes inaccurate predictions, with substantial deviations from the actual values. The extraordinarily high MAPE suggests that the model's predictions are off by an extremely large percentage on average, indicating very poor relative accuracy. The negative R² value of -20.786 means that the model performs significantly worse than simply using the mean of target variables. 
+
+**Random Forest model:** The low MSE (0.022), RMSE (0.148), and MAE (0.054) indicate that the model makes very accurate predictions, with small deviations from the actual values.   The MAPE (0.014) is very low, R2 value of 0.912 suggesting that the model explains 97.2% of the variance in the test data, model can predict, showing that it effectively captures the underlying patterns in the data.
+
+**Stack Model:** The low MSE (0.020), RMSE (0.143), and MAE (0.058) indicate that the model makes very accurate predictions, with small deviations from the actual values. Despite the anomalously high MAPE which seems to be an outlier, the model overall demonstrates strong performance. The high R² value of 0.975 means that the model explains 95% of the variance in the target variable, showing that it effectively captures the underlying patterns in the data.
 
 ### Discussion
 
@@ -203,11 +206,12 @@ Fig: Comparison of Model performance
 - Weaknesses: Slightly higher MAE compared to Random Forest, MAPE is relatively high, indicating potential issues with percentage error.
 
 
-Insights into the predictability of app ratings.
+**Insights into the predictability of app ratings.**
 - Random Forest and Stack Models: Both demonstrate strong predictive power with high R2 values and low error metrics, suggesting that app ratings can be predicted accurately using these methods.
 - kNN-5 Model: Shows moderate performance, indicating that while it can capture some patterns in the data, it is not as effective as more complex models.
 - Linear Regression Model: Performs poorly, suggesting that the relationship between features and app ratings is not linear, or the model suffers from significant overfitting or underfitting.
-Conclusions
+  
+### Conclusions
 In conclusion, for predicting app ratings, Random Forest and Stack models provide the best performance, with the Stack model having a slight edge in terms of overall error metrics. Both demonstrate strong predictive power with high R2 values and low error metrics, suggesting that app ratings can be predicted accurately using these methods. Slightly higher MAE compared to Random Forest, MAPE is relatively high, indicating potential issues with percentage error. Random Forest  is the best model for this data.
 
 
