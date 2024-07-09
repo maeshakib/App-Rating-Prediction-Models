@@ -37,49 +37,50 @@ Global Mobile Apps Exercise - its a list of Apps in Google, Apple and Kindle sto
 With Histogram will explore the distribution of the average_rating. 
 The histogram shows a significant number of apps with an average ratings of 4 and 4.5 and 5, which suggests that a large portion of the apps are well-rated.
 
- <picture>
-  <img align="left" alt="Location page | PBI" width="1000px" src="https://github.com/maeshakib/App-Rating-Prediction-Models/blob/main/Fig%201%20Distribution%20of%20Average%20Ratings.png" /> <br>
-</picture>
+<img  alt="Location page | PBI" width="500px" src="https://github.com/maeshakib/App-Rating-Prediction-Models/blob/main/Fig%201%20Distribution%20of%20Average%20Ratings.png" /> 
+<br/>
 Fig 1:Distribution of Average Ratings
 
+<br/> 
 2.	Filesize vs. Average Rating
 The scatter plot shows the relationship between app filesize and average rating across different app stores (Amazon, Apple, Google Play). There is no clear correlation between filesize and average rating, indicating that app quality, as perceived by users, does not significantly depend on the app's filesize. However, apps from the Apple store (red dots) seem to have a wider range of filesizes compared to other stores.
-<picture>
-  <img align="left" alt="Location page | PBI" width="1000px" src="https://github.com/maeshakib/App-Rating-Prediction-Models/blob/main/Fig%202%20%20Filesize%20vs.%20Average%20Rating.png" /> <br>
-</picture>
-
+<img  alt="Location page | PBI" width="500px" src="https://github.com/maeshakib/App-Rating-Prediction-Models/blob/main/Fig%202%20%20Filesize%20vs.%20Average%20Rating.png" />
 Fig 2: Filesize vs. Average Rating
 
 3.	Ratings by App Category
 Box Plot: To compare the distribution of ratings across different categories. we observed that game app getting higher ratting that other categories
- <picture>
-  <img align="left" alt="Location page | PBI" width="1000px" src="https://github.com/maeshakib/App-Rating-Prediction-Models/blob/main/Fig%203%20%20Ratings%20by%20App%20Category.png" /> <br>
-</picture>
+<img  alt="Location page | PBI" width="500px" src="https://github.com/maeshakib/App-Rating-Prediction-Models/blob/main/Fig%203%20%20Ratings%20by%20App%20Category.png" />
 Fig 3: Ratings by App Category
-4.	Category wise Box Plot:
+<br/>
+5.	Category wise Box Plot:
  To identify outliers and understand the spread of ratings.. we observed that game app getting higher ratting that other categories
-<picture>
-  <img align="left" alt="Location page | PBI" width="1000px" src="https://github.com/maeshakib/App-Rating-Prediction-Models/blob/main/Fig%204%20Category%20wise%20Box%20Plot.png" /> <br>
-</picture>
+
+  <img  alt="Location page | PBI" width="500px" src="https://github.com/maeshakib/App-Rating-Prediction-Models/blob/main/Fig%204%20Category%20wise%20Box%20Plot.png" />
+<br/>
+
  
+<br/>
 Fig 4: Category wise Box Plot
+<br/>
 5.	Price vs. Average Rating
 Scatter Plot: To examine if there is any relationship between the price of the app and its rating.
  
+  <img alt="Location page | PBI" width="500px" src="https://github.com/maeshakib/App-Rating-Prediction-Models/blob/main/Fig%204%20Category%20wise%20Box%20Plot.png" /> 
+  <br/>
 
- <picture>
-  <img align="left" alt="Location page | PBI" width="1000px" src="https://github.com/maeshakib/App-Rating-Prediction-Models/blob/main/Fig%204%20Category%20wise%20Box%20Plot.png" /> <br>
-</picture>
+<br/>
 Fig 4: Price vs Average Rating
 
 Prediction models workflow
- <picture>
-  <img align="left" alt="Location page | PBI" width="1000px" src="https://github.com/maeshakib/App-Rating-Prediction-Models/blob/main/Fig%20Orange%20Data%20Mining%20process%20flow.png" /> <br>
-</picture>
+
+  <img  alt="Location page | PBI" width="500px" src="https://github.com/maeshakib/App-Rating-Prediction-Models/blob/main/Fig%20Orange%20Data%20Mining%20process%20flow.png" />
+<br/>
+
+<br/>
 Fig 4: Price vs Average Rating
+<br/>
 
-
-Data Sampling
+**Data Sampling**
 There are 25,124 instances in the dataset. We used the Data Sampler widget to split the data, choosing a fixed proportion approach: 70% of the data instances were allocated to the training sample, while the remaining 30% were reserved for testing.
 
 Model Training
