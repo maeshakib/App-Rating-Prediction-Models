@@ -108,11 +108,11 @@ Stacking is an ensemble learning technique that combines multiple classification
 
 The performance metrics for this model are as follows:
 
-•	MSE (Mean Squared Error): 0.537
-•	RMSE (Root Mean Squared Error): 0.733
-•	MAE (Mean Absolute Error): 0.393
-•	MAPE (Mean Absolute Percentage Error): 3074...
-•	R2 (R-squared): 0.329
+- MSE (Mean Squared Error): 0.537
+- RMSE (Root Mean Squared Error): 0.733
+- MAE (Mean Absolute Error): 0.393
+- MAPE (Mean Absolute Percentage Error): 3074...
+- R2 (R-squared): 0.329
 
 **Performance:**  The kNN-5 model shows moderate performance based on the given metrics. The low MSE (0.537),RMSE ( 0.733),	MAE (0.393) values suggest that the model can reasonably predict the target variable, the high MAPE and relatively low R2(0.329) indicate limitations in its predictive power and accuracy, particularly in terms of relative errors.
 
@@ -126,7 +126,7 @@ The Random Forest model’s performance metrics are as follows:
 - MAE (Mean Absolute Error): 0.142
 - MAPE (Mean Absolute Percentage Error): 0.038
 - R2 (R-squared): 0.912
-- 
+
 **Performance:**
   
 The low MSE (0.070), RMSE (0.265), and MAE (0.142) indicate that the model makes very accurate predictions, with small deviations from the actual values.   The MAPE (0.038) is very low, suggesting that the model's predictions are off by only 3.8% on average from the actual values, demonstrating excellent relative accuracy. The R2 value of 0.912 means that the model explains 91.2% of the variance in the target variable, showing that it effectively captures the underlying patterns in the data.
@@ -152,7 +152,7 @@ The high MSE (21390), RMSE (462), and MAE (42) indicate that the model makes ina
 - Model Selection: Linear Regression might not be the best choice for this dataset. It could be that the relationship between the variables is not linear.
 - Feature Selection: The features used might not be suitable, or there could be multicollinearity, where independent variables are highly correlated with each other.
 - Data Issues: There might be issues with the data, such as outliers, incorrect values, or improper scaling.
-- 
+  
 **Stack Model:**
   
 The Stack model’s performance metrics are as follows:
@@ -176,13 +176,13 @@ Random Forest model: The low MSE (0.022), RMSE (0.148), and MAE (0.054) indicate
 
 Stack Model: The low MSE (0.020), RMSE (0.143), and MAE (0.058) indicate that the model makes very accurate predictions, with small deviations from the actual values. Despite the anomalously high MAPE which seems to be an outlier, the model overall demonstrates strong performance. The high R² value of 0.975 means that the model explains 95% of the variance in the target variable, showing that it effectively captures the underlying patterns in the data.
 
-Discussion
+### Discussion
 
 Comparison of model performances.
 Table comparing different metrics across model, rows column model accuracy based on column models.
 
  <picture>
-  <img align="left" alt="Location page | PBI" width="1000px" src="https://github.com/maeshakib/App-Rating-Prediction-Models/blob/main/sumamry.png" /> <br>
+  <img   alt="Location page | PBI" width="800px" src="https://github.com/maeshakib/App-Rating-Prediction-Models/blob/main/sumamry.png" /> <br>
 </picture>
 Fig: Comparison of Model performance
 <br/>
